@@ -1,0 +1,13 @@
+.container {
+  padding: 20px;
+  height: 400px;
+  width: 600px;
+  align-items: center;
+  display: inline-block;
+  border: solid black 1px;
+}
+body {
+  font-family: Arial;
+  text-align: center;
+  margin-top: 50px;
+}
