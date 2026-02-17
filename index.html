@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Student Record Manager</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,7 +16,7 @@
       <button id="addBtn">Add Student</button>
 
       <br /><br />
-      <table>
+      <table border="1" width="100%" cellspacing="0">
         <thead>
           <tr>
             <th>Name</th>
@@ -25,7 +25,11 @@
             <th>Delete</th>
           </tr>
         </thead>
+        <tbody id="studentTable"></tbody>
       </table>
     </div>
+
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
