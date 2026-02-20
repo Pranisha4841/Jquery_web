@@ -9,20 +9,16 @@ $(document).ready(function () {
       return;
     }
 
-    $("#studentTable").append(
-      "<tr>" +
-        "<td>" +
-        name +
-        "</td>" +
-        "<td>" +
-        age +
-        "</td>" +
-        "<td>" +
-        course +
-        "</td>" +
-        "<td><button class='deleteBtn'>Delete</button></td>" +
-        "</tr>",
-    );
+    var newRow = `
+      <tr>
+        <td>${name}</td>
+        <td>${age}</td>
+        <td>${course}</td>
+        <td><button class="deleteBtn">Delete</button></td>
+      </tr>
+    `;
+
+    $("#studentTable").append(newRow);
 
     $("#name").val("");
     $("#age").val("");
@@ -30,6 +26,10 @@ $(document).ready(function () {
   });
 
   $(document).on("click", ".deleteBtn", function () {
-    $(this).closest("tr").remove();
+    $(this)
+      .closest("tr")
+      .fadeOut(300, function () {
+        $(this).remove();
+      });
   });
 });
