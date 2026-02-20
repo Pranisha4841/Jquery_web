@@ -5,6 +5,7 @@
   display: inline-block;
   border: solid black 1px;
 }
+
 body {
   font-family:
     system-ui,
@@ -21,9 +22,15 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+
 table {
   border: 1px solid black;
   margin: auto;
   width: 60%;
   border-collapse: collapse;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
 }
