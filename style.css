@@ -4,7 +4,7 @@
   width: 400px;
   display: inline-block;
   border-radius: 12px;
-  background: lightgray;
+  background: radial-gradient(circle, #dbd0cd, #f09785);
   box-shadow: 0 4px 8px rgba(246, 242, 242, 0.1);
 }
 
@@ -23,7 +23,6 @@ body {
     sans-serif;
   text-align: center;
   margin-top: 50px;
-  background: #f8f9fc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +79,12 @@ button:hover {
 .deleteBtn:hover {
   background-color: #c0392b;
 }
+.editBtn {
+  background-color: rgb(3, 61, 3);
+}
+.editBtn:hover {
+  background-color: #448250;
+}
 th {
   color: black;
   padding: 10px;
@@ -97,4 +102,28 @@ tr:hover {
 table {
   width: 100%;
   border-collapse: collapse;
+}
+#addBtn {
+  background: rgb(15, 54, 80);
+}
+
+#addBtn:hover {
+  background: #436d97;
+}
+
+#updateBtn {
+  background: #ffc107;
+  color: black;
+}
+
+#updateBtn:hover {
+  background: #e0a800;
+}
+
+#cancelBtn {
+  background: #6c757d;
+}
+
+#cancelBtn:hover {
+  background: #5a6268;
 }
